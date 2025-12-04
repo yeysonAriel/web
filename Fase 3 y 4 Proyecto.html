@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Típicos El Rodeo - Restaurante Hondureño</title>
+  <meta name="description" content="Típicos El Rodeo: Comida típica hondureña, ambiente familiar y cultural en San Francisco de la Paz, Olancho." />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style> 
+    :root{ 
+      --accent:#b87333;
+      --accent-2:#4a2c00;
+      --muted:#6b7280;
+      --bg:#fffaf5;
+      --card:#ffffff;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; background:var(--bg); color:#2e2e2e;}
+    a{color:inherit; text-decoration:none}
+    .container{max-width:1100px; margin:0 auto; padding:24px}
+
+    /* Header */
+    header{background:linear-gradient(180deg, rgba(74,44,0,0.95), rgba(184,115,51,0.85)); color:white;}
+    .topbar{display:flex; align-items:center; justify-content:space-between; padding:18px 24px;}
+    .brand{display:flex; align-items:center; gap:12px; font-weight:700;}
+    .brand img{width:60px; height:60px; border-radius:50%; object-fit:cover;}
+    nav a{margin-left:18px; color:rgba(255,255,255,0.95); font-weight:600;}
+    .hero{display:grid; grid-template-columns:1fr; gap:20px; padding:40px 24px 80px;}
+    .hero-inner{display:flex; gap:28px; align-items:center;}
+    .hero-left{max-width:640px;}
+    .eyebrow{display:inline-block; background:rgba(255,255,255,0.12); padding:6px 10px; border-radius:999px; font-size:13px;}
+    h1{font-family:Montserrat, sans-serif; font-size:40px; margin:12px 0;}
+    p.lead{color:rgba(255,255,255,0.92); margin:0 0 18px;}
+    .cta{display:inline-block; background:white; color:var(--accent-2); padding:12px 18px; border-radius:10px; font-weight:700;}
+    .hero-photo{flex:1; min-height:260px; border-radius:14px; overflow:hidden; box-shadow:0 10px 30px rgba(2,6,23,0.18);}
+    .hero-photo img{width:100%; height:100%; object-fit:cover; display:block;}
+
+    /* Cards grid */
+    .section{padding:48px 24px;}
+    .section h2{margin:0 0 10px; font-family:Montserrat;}
+    .grid{display:grid; gap:18px;}
+    .grid.cols-3{grid-template-columns:repeat(3,1fr);}
+    .card{background:var(--card); border-radius:12px; padding:14px; box-shadow:0 6px 18px rgba(2,6,23,0.06);}
+    .card img{width:100%; height:180px; object-fit:cover; border-radius:8px;}
+    .card h3{margin:12px 0 6px;}
+    .muted{color:var(--muted); font-size:14px;}
+    .small{font-size:13px;}
+
+    /* Gallery */
+    .gallery{display:grid; grid-template-columns:repeat(4,1fr); gap:8px;}
+    .gallery img{width:100%; height:140px; object-fit:cover; border-radius:8px; cursor:pointer;}
+
+    /* Contact */
+    form{display:grid; gap:8px;}
+    input, textarea{padding:10px; border-radius:8px; border:1px solid #e6eef0; width:100%; font-size:15px;}
+    button[type=submit]{background:var(--accent); color:white; padding:12px; border:none; border-radius:10px; font-weight:700; cursor:pointer;}
+
+    /* footer */
+    footer{padding:36px 24px; color:#0b1220;}
+    .footer-grid{display:grid; grid-template-columns:1fr 240px; gap:18px;}
+
+    /* responsive */
+    @media (max-width:900px){
+      .grid.cols-3{grid-template-columns:repeat(2,1fr);}
+      .hero-inner{flex-direction:column;}
+      .gallery{grid-template-columns:repeat(2,1fr);}
+      .footer-grid{grid-template-columns:1fr;}
+    }
+    @media (max-width:520px){
+      h1{font-size:28px;}
+      .topbar{padding:12px;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar container">
+      <div class="brand">
+        <img src="Logo/logo.jpeg" alt="Logo Tipicos El Rodeo">
+        <div>
+          <div style="font-size:14px;">Restaurante</div>
+          <div style="font-size:13px;">Típicos El Rodeo</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#menu">Menú</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+    <div id="inicio" class="hero container">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <span class="eyebrow">Yeyson Ariel Santos Herrera-124550136 </span>
+          <h1>Típicos El Rodeo</h1>
+          <p class="lead">
+            Un restaurante con esencia hondureña, su creadora <b>Claudia Marieli Rosales</b>, apasionada por la cocina tradicional y la gastronomía internacional.
+            En Típicos El Rodeo encontrarás el equilibrio perfecto entre sabor, cultura y ambiente familiar.
+          </p>
+          <a class="cta" href="#menu">Ver menú</a>
+        </div>
+        <div class="hero-photo">
+          <img src="Restaurante/restaurante 23.jpeg" alt="Restaurante Tipicos El Rodeo">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container">
+      <h2>Sobre Nosotros</h2>
+      <p class="muted">
+        <b>Típicos El Rodeo</b> es un emprendimiento nacido del amor por la cocina, en el cual frecemos una experiencia gastronómica auténtica, con platillos típicos hondureños y toques internacionales.
+        Contamos con amplias instalaciones, estacionamiento, áreas de juegos para niños y espacios privados tipo quiosco, ideales para disfrutar en familia.
+      </p>
+    </section>
+
+     <section id="menu" class="section container">
+      <h2>Menú Destacado</h2>
+      <div class="grid cols-3" style="margin-top:18px;">
+        <article class="card">
+          <img src="Platillos/Alitas.jpeg" alt="Golosinas">
+          <h3>Plato Alitas salsa-Barbacoa-Picante/h3>
+          <p class="muted small"> Alitas de 6 piesas----L 150.00/ 12 piesas----L 280.00
+          </p>
+        </article>
+         <article class="card">
+          <img src="Platillos/Camarones empanizados .jpeg" alt="Golosinas">
+          <h3>Camarones empanizados</h3>
+          <p class="muted small">Ensalada verde, tostones, arroz----L 280.00</p>
+        </article>
+         <article class="card">
+          <img src="Platillos/Carne asada.jpeg" alt="Golosinas">
+          <h3>Carne asada de RES</h3>
+          <p class="muted small">Carne asada de RES---- L 230.00</p>
+        </article>
+         <article class="card">
+          <img src="Platillos/Culeta a la plancha.jpeg" alt="Golosinas">
+          <h3>Tajadas con carne</h3>
+          <p class="muted small">Tajadas con carne (Res, Cerdo)----L 170.00</p>
+        </article>
+         <article class="card">
+          <img src="Platillos/Pescado frito 2.jpeg" alt="Golosinas">
+          <h3>Pescad frito</h3>
+          <p class="muted small">Pescado frito----L 250.00</p>
+        </article>
+         <article class="card">
+          <img src="Platillos/Entrada 1.jpeg" alt="Golosinas">
+          <h3>Canastitas de verde rellena de carne asada</h3>
+          <p class="muted small">Canastitas de verde rellenas de carne azada----L 200.00</p>
+        </article>
+         <article class="card">
+          <img src="Platillos/Entrada 2.jpeg" alt="Golosinas">
+          <h3>Anafre mixto</h3>
+          <p class="muted small">Anafre mixto (Quesillo, chorizo y mantequilla)----L 190.00</p> 
+          </article>
+         <article class="card">
+          <img src="Platillos/Hamburguesa.jpeg" alt="Golosinas">
+          <h3>Hamburguesa</h3>
+          <p class="muted small">Hamburguesa de res con papas----L 140.00</p>
+        </article>
+         <article class="card">
+          <img src="Platillos/Pollo con tajadas 2.jpeg" alt="Golosinas">
+          <h3>Tajadas con Pollo</h3>
+          <p class="muted small">Tajadas con pollo----L 150.00</p>
+        </article>
+         <article class="card">
+          <img src="Platillos/Tacos 1.jpeg" alt="Golosinas">
+          <h3>Tacos Mexicanos</h3>
+          <p class="muted small">Tacos Mexicanos (Cerdo, orden de 3)----L 120.00</p>
+        </article>
+         <article class="card">
+          <img src="Platillos/Sopa .jpeg" alt="Golosinas">
+          <h3>Cazuela de mondongo</h3>
+          <p class="muted small">Cazuela de mondongo----L 150.00</p>
+        </article>
+         <article class="card">
+          <img src="Platillos/Sopa marinera.jpeg" alt="Golosinas">
+          <h3>Sopa Marinera</h3>
+          <p class="muted small">Sopa Marinera (Langosta, Caracol King Crak, Camarón, Pescado)----L 680.00</p>
+        </article>
+         <article class="card">
+          <img src="Platillos/Rosquillas en miel.jpeg" alt="Golosinas">
+          <h3>Rosquilla en miel</h3>
+          <p class="muted small">Rosquilla en miel----L 45.00</p>
+        </article>
+         <article class="card">
+          <img src="Bebidas/bebida 3.jpeg" alt="Golosinas">
+          <h3>Bebidas heladas</h3>
+          <p class="muted small">Limonada frozen----L 50.00
+            Granizados de piña----L 60.00
+            Granizados de melon----L 50.00
+            Granizados de fresa----L 60.00
+            Granizados de frsa limon----L 65.00
+          </p>
+        </article>
+         <article class="card">
+          <img src="Bebidas/bebida 1.jpeg" alt="Golosinas">
+          <h3>Piña colada</h3>
+          <p class="muted small">Piña colada (Con o sin alcohol)----L 150.00</p>
+         </article>
+      </div>
+    </section>
+
+    <section id="galeria" class="section container">
+      <h2>Galería y Video</h2>
+      <div class="gallery" style="margin-top:14px;">
+        <img src="Restaurante/restaurante 1.jpeg" alt="Comida típica" onclick="openLightbox(this.src)">
+        <img src="Restaurante/restaurante 2.jpeg" alt="Ambiente del restaurante" onclick="openLightbox(this.src)">
+        <img src="Restaurante/restaurante 23.jpeg" alt="Interior restaurante" onclick="openLightbox(this.src)">
+        <img src="Restaurante/restaurante 4.jpeg" alt="Plato servido" onclick="openLightbox(this.src)">
+      </div>
+      <div style="margin-top:20px;">
+        <iframe width="100%" height="360" src="Restaurante/Video de evento.mp4" title="Video restaurante" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section id="contacto" class="section container">
+      <h2>Contacto y Reservaciones</h2>
+      <div style="display:grid; grid-template-columns:1fr 360px; gap:18px;">
+        <div class="card">
+          <p><b>Teléfono:</b> <a href="tel:+50496710917">+504 9671-0917</a></p>
+          <p><b>Facebook:</b> <a href="https://www.facebook.com/share/1FhpW2fy8w/?mibextid=wwXIfr" target="_blank">Típicos El Rodeo</a></p>
+          <p><b>Ubicación:</b> <a href="https://maps.app.goo.gl/acZYG4jaE57WQoYP6" target="_blank">Tipicos El Rodeo, San Francisco de la Paz, Olancho</a></p>
+          <p><b>Reservaciones para eventos sociales</b> — Contáctanos para cumpleaños, reuniones y más.</p>
+        </div>
+        <div class="card">
+          <h3>Escríbenos</h3>
+          <form onsubmit="handleSubmit(event)">
+            <input type="text" name="name" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Fecha" required>
+            <textarea name="message" rows="4" placeholder="Tu mensaje o reservación"></textarea>
+            <button type="submit">Enviar mensaje</button>
+          </form>
+          <p id="form-msg" style="margin-top:10px; color:var(--muted);"></p>
+        </div>
+      </div>
+    </section
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h3 style="margin:0;">Típicos El Rodeo</h3>
+        <p class="muted small">San Francisco de la Paz, Olancho — Restaurante típico con ambiente familiar.</p>
+      </div>
+      <div>
+        <h4 style="margin-top:0;">Sitio creado por</h4>
+        <p class="small">Yeyson Ariel Santos (Proyecto Web 2025)</p>
+      </div>
+    </div>
+    <div style="text-align:center; padding:16px; color:var(--muted);">© <span id="year"></span> Típicos El Rodeo</div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" style="position:fixed; inset:0; display:none; background:rgba(2,6,23,0.7); align-items:center; justify-content:center; z-index:9999;">
+    <img id="lightboxImg" src="" alt="" style="max-width:94%; max-height:86%; border-radius:10px; box-shadow:0 10px 30px rgba(0,0,0,0.5);">
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function openLightbox(src){const lb=document.getElementById('lightbox');const img=document.getElementById('lightboxImg');img.src=src;lb.style.display='flex';}
+    document.getElementById('lightbox').addEventListener('click',e=>{if(e.target.id==='lightbox'||e.target.id==='lightboxImg')e.currentTarget.style.display='none';});
+    function handleSubmit(e){e.preventDefault();const n=e.target.name.value;document.getElementById('form-msg').textContent=`¡Gracias ${n}! Tu mensaje ha sido enviado (demostración).`;e.target.reset();}
+    document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',evt=>{evt.preventDefault();document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth',block:'start'});}));
+  </script>
+</body>
+</html>
